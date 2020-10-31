@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: ARIA2C
-        run: aria2c --seed-time=0 --on-bt-download-complete=exit --on-download-complete=exit --check-certificate=false http://itorrents.org/torrent/5996378AB5DCF16954F7E4DAD2450CC138B32798.torrent
+        run: aria2c --seed-time=0 --on-bt-download-complete=exit --on-download-complete=exit --check-certificate=false https://zoink.ch/torrent/The.Mandalorian.S02E01.Chapter.9.The.Marshal.1080p.10bit.WEBRip.6CH.x265.HEVC-PSA[eztv.io].mkv.torrent
       - name: LS
         run: ls -lah
       - name: DF
