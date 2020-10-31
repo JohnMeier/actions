@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: ARIA2C
-        run: aria2c --seed-time=0 --on-bt-download-complete=exit --on-download-complete=exit --check-certificate=false magnet:?xt=urn:btih:71E65949DD51350AD41627181ECCA6B0C8E72A7F&dn=Gold.Rush.White.Water.S02E01.The.Dakotas.Strike.Back.1080p.AMZN.WEBRip.DDP2.0.x264-NTb&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce&tr=udp%3A%2F%2F9.rarbg.me%3A2710%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2710%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce
+        run: aria2c --seed-time=0 --on-bt-download-complete=exit --on-download-complete=exit --check-certificate=false http://itorrents.org/torrent/71E65949DD51350AD41627181ECCA6B0C8E72A7F.torrent
       - name: LS
         run: ls -lah
       - name: DF
