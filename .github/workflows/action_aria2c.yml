@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: ARIA2C
-        run: aria2c --seed-time=0 --on-bt-download-complete=exit --on-download-complete=exit --check-certificate=false http://itorrents.org/torrent/0FCFAB51E319EEBFBFC1F100041B974EBE43976B.torrent
+        run: aria2c --seed-time=0 --on-bt-download-complete=exit --on-download-complete=exit --check-certificate=false http://itorrents.org/torrent/5996378AB5DCF16954F7E4DAD2450CC138B32798.torrent
       - name: LS
         run: ls -lah
       - name: DF
