@@ -1,1 +1,14 @@
-
+name: aria2c Bittorrent
+on:
+  push:
+    branches: [ aria2c ]
+jobs:
+  build: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: ARIA2C
+        run: aria2c --seed-time=0 --on-bt-download-complete=exit --on-download-complete=exit --check-certificate=false http://distribution.bbb3d.renderfarming.net/video/mp4/bbb_sunflower_native_60fps_stereo_abl.mp4.torrent
+      - name: LS
+        run: ls -lah
+      - name: DF
+        run: df -h
